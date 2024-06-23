@@ -1,0 +1,9 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<!--Aquí va lo que cambia, y lo asociado a esta vista :) -->
+<p>***USUARIOS:***</p>
+    {% for u in usuarios %}
+        <li>{{u}}</li>
+    {% endfor %}
+{% endblock %}

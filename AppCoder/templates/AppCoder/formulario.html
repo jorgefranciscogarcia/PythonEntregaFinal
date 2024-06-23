@@ -1,0 +1,15 @@
+{% extends "AppCoder/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<!--Aquí va lo que cambia, y lo asociado a esta vista :) -->
+<p>***FORMULARIO***</p>
+    <form action="/formulario/" method="POST">{% csrf_token %}
+
+        <p>Nombre: <input type="text" name="nombre"</p>
+
+        <p>Contraseña: <input type="number" name="contraseña"</p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+{% endblock %}
